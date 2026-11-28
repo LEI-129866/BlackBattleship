@@ -1,0 +1,225 @@
+{
+  "id": "c77e29df-77ed-45fb-bdf7-db8fcde631f9",
+  "version": "2.0",
+  "name": "TestSuite_129846",
+  "url": "https://papergames.io",
+  "tests": [{
+    "id": "5085b6ba-cb0b-4fe1-870a-541470de172a",
+    "name": "UserStoryTest5",
+    "commands": [{
+      "id": "fb0b7e55-b1a0-480b-8617-bf6f95b3e95d",
+      "comment": "Abrir página inicial do Papergames",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a614f2af-6c7b-4dec-a5e1-382a680b91ee",
+      "comment": "Definir tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "1470x923",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d7b982c-58bf-4f93-a348-2b65b9abff0c",
+      "comment": "Selecionar o jogo Battleship no catálogo",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Batalha Naval']", "xpath:img"],
+        ["xpath=//a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74fec87a-c5f3-4bc0-9b99-5c20217eced6",
+      "comment": "Iniciar partida contra o robot",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65baad0d-4bc8-495d-833d-6907f34c3053",
+      "comment": "Verificar que o tabuleiro de posicionamento dos navios foi carregado",
+      "command": "assertText",
+      "target": "css=.player-container > .bg-primary",
+      "targets": [
+        ["css=.player-container > .bg-primary", "css:finder"],
+        ["xpath=//div[@id='battleships']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Seus navios"
+    }]
+  }, {
+    "id": "a4ebd4fe-35a7-4ec0-908e-cb3169edbd05",
+    "name": "UserStoryTest17",
+    "commands": [{
+      "id": "46687918-8ec5-4ea6-8ba6-f959508ee1d2",
+      "comment": "Abrir página inicial com catálogo de jogos",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "134a0c63-e84b-401e-977b-a1b31c7767ac",
+      "comment": "Definir tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "1470x923",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "204a552a-b8bd-4b32-bd4d-5f1e95649dcc",
+      "comment": "Selecionar o jogo Battleship no catálogo",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Batalha Naval']", "xpath:img"],
+        ["xpath=//a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ec18d0-9a23-4e74-9baf-eb6c23a50c0a",
+      "comment": "Regressar ao catálogo de jogos da página inicial",
+      "command": "click",
+      "target": "linkText=Início",
+      "targets": [
+        ["linkText=Início", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=(//a[contains(@href, '/pt-br/')])[4]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Início')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2c62f4b-8701-4e77-b4bc-a039caea3f0a",
+      "comment": "Selecionar o segundo jogo de tabuleiro no catálogo",
+      "command": "click",
+      "target": "css=.game-item:nth-child(2) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(2) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Jogo da Velha']", "xpath:img"],
+        ["xpath=//div[2]/a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ecffb62-24aa-45bc-915c-b016fe70983f",
+      "comment": "Validar carregamento da página do segundo jogo selecionado",
+      "command": "assertText",
+      "target": "css=.h3",
+      "targets": [
+        ["css=.h3", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Jogar Jogo da Velha online (Tic Tac Toe)')]", "xpath:innerText"]
+      ],
+      "value": "Jogar Jogo da Velha online (Tic Tac Toe)"
+    }]
+  }, {
+    "id": "3bd40a63-8945-4f9a-8e94-e0cd9ff7c940",
+    "name": "UserStoryTest4",
+    "commands": [{
+      "id": "4539926a-f8cd-40be-93d6-716817b70d6c",
+      "comment": "Abrir página inicial do Papergames",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5583368-b3e4-4dec-a685-33cc448ff948",
+      "comment": "Definir tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "1470x923",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c576fe9-1b5c-407d-9a5e-63bb25ad5a16",
+      "comment": "Selecionar o jogo Battleship no catálogo",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Batalha Naval']", "xpath:img"],
+        ["xpath=//a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b110efc7-486e-4c11-903e-9848bdcc11e2",
+      "comment": "Validar apresentação do título das Regras da Batalha Naval",
+      "command": "assertText",
+      "target": "css=.cms-content > h2:nth-child(2)",
+      "targets": [
+        ["css=.cms-content > h2:nth-child(2)", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Regras da Batalha Naval')]", "xpath:innerText"]
+      ],
+      "value": "Regras da Batalha Naval"
+    }]
+  }, {
+    "id": "227856ad-d8b5-4d6d-9681-12f8801fa745",
+    "name": "UserStoryTest6",
+    "commands": [{
+      "id": "92f13180-8594-47be-ae18-484177d52b6e",
+      "comment": "Abrir página inicial do Papergames",
+      "command": "open",
+      "target": "/pt-br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d4032e8-4144-4252-9c0f-e9e6b58c6c33",
+      "comment": "Definir tamanho da janela do navegador",
+      "command": "setWindowSize",
+      "target": "1470x923",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "799c8539-6936-495a-a22a-d3df9acd3054",
+      "comment": "Selecionar o jogo Battleship no catálogo",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Batalha Naval']", "xpath:img"],
+        ["xpath=//a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bbc3b8b-cf04-40a5-b37f-d72ca634e8e1",
+      "comment": "Validar apresentação da opção de jogar contra jogador aleatório",
+      "command": "assertText",
+      "target": "css=.fw-normal:nth-child(2)",
+      "targets": [
+        ["css=.fw-normal:nth-child(2)", "css:finder"],
+        ["xpath=//span/span[2]", "xpath:position"]
+      ],
+      "value": "com jogador aleatório"
+    }, {
+      "id": "2d4a3c4e-abbc-40c7-bbe9-b5db93dfd70e",
+      "comment": "Iniciar partida online contra adversário aleatório",
+      "command": "click",
+      "target": "css=.fw-normal:nth-child(2)",
+      "targets": [
+        ["css=.fw-normal:nth-child(2)", "css:finder"],
+        ["xpath=//span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a3756d53-4327-4acf-aee6-4afd82d102a8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": [
+          "3bd40a63-8945-4f9a-8e94-e0cd9ff7c940",
+          "5085b6ba-cb0b-4fe1-870a-541470de172a",
+          "227856ad-d8b5-4d6d-9681-12f8801fa745",
+          "a4ebd4fe-35a7-4ec0-908e-cb3169edbd05"
+        ]
+  }],
+  "urls": ["https://papergames.io/"],
+  "plugins": []
+}
